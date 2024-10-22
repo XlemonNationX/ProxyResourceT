@@ -7,7 +7,7 @@
 作者：@Key @奶茶姐 @小一 @可莉🅥
 用法：Sub-Store脚本操作里添加，缓存默认48小时。
 日期：2023-11-17 08:10:38
-示例：https://gitlab.com/lodepuly/ProxyResource/-/raw/main//Resource/Script/Sub-Store/NodeRename.js#bs=10&timeout=2000&cd=2000&iisp&flag&city&fgf=→&name=[方括号内填写你的机场名称]
+示例：https://gitlab.com/lodepuly/ProxyResource/-/raw/main/Resource/Script/Sub-Store/NodeRename.js#bs=10&timeout=2000&cd=2000&iisp&flag&city&fgf=→&name=[方括号内填写你的机场名称]
 ----------------
 以下是此脚本支持的参数，必须以"#"开头，多个参数使用"&"连接，参考上述地址为例使用参数；
 无参数时的节点命名格式: "美国 01"，如果[入口IP或国家]或[落地IP或国家]一样则为 "直连 德国 01"；

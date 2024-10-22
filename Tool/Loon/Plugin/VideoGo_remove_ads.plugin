@@ -1,12 +1,12 @@
 #!name = 萤石云视频去广告
 #!desc = 移除开屏广告、首页推广、我的页面推广。
 #!openUrl = https://apps.apple.com/app/id571195405
-#!author = 可莉🅥[https://gitlab.com/lodepuly/ProxyResource-/blob/master/README.md]
+#!author = 可莉🅥[https://gitlab.com/lodepuly/ProxyResource-/blob/main/README.md]
 #!tag = 去广告
 #!system = 
 #!system_version = 
 #!loon_version = 3.2.1(749)
-#!homepage = https://gitlab.com/lodepuly/ProxyResource-/blob/master/README.md
+#!homepage = https://gitlab.com/lodepuly/ProxyResource-/blob/main/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/VideoGo.png
 #!date = 2024-07-10 02:10:56
 
@@ -112,7 +112,7 @@ DOMAIN-SUFFIX, pos.baidu.com, REJECT
 ^https:\/\/api\.ys7\.com\/v3\/videoclips\/square\/video\/query reject-dict
 
 [Script]
-# http-response ^https:\/\/api\.ys7\.com\/v3\/valueadded\/operation\/config\/master\/station script-path = https://gitlab.com/lodepuly/ProxyResource/-/raw/main//Resource/Script/VideoGo/VideoGo_remove_ads.js, requires-body = true, tag = 我的页面去广告
+# http-response ^https:\/\/api\.ys7\.com\/v3\/valueadded\/operation\/config\/master\/station script-path = https://gitlab.com/lodepuly/ProxyResource/-/raw/main/Resource/Script/VideoGo/VideoGo_remove_ads.js, requires-body = true, tag = 我的页面去广告
 
 [MitM]
 hostname = api.ys7.com, i.ys7.com

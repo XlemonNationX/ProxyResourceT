@@ -1,12 +1,12 @@
 #!name = YY去广告
 #!desc = 移除开屏广告、应用内弹窗，精简底栏和我的页面。
 #!openUrl = https://apps.apple.com/app/id427941017
-#!author = 可莉🅥[https://gitlab.com/lodepuly/ProxyResource-/blob/master/README.md]
+#!author = 可莉🅥[https://gitlab.com/lodepuly/ProxyResource-/blob/main/README.md]
 #!tag = 去广告
 #!system = 
 #!system_version = 
 #!loon_version = 3.2.1(749)
-#!homepage = https://gitlab.com/lodepuly/ProxyResource-/blob/master/README.md
+#!homepage = https://gitlab.com/lodepuly/ProxyResource-/blob/main/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/YY_Voice.png
 #!date = 2024-09-08 13:09:26
 
@@ -93,7 +93,7 @@ DOMAIN, sdk.beizi.biz, REJECT
 
 [Script]
 # 我的页面
-http-response ^https:\/\/personal-center\.yy\.com\/personalCenter\/list\? script-path = https://gitlab.com/lodepuly/ProxyResource/-/raw/main//Resource/Script/YY_Voice/YY_Voice_remove_ads.js, requires-body = true, tag = 精简我的页面
+http-response ^https:\/\/personal-center\.yy\.com\/personalCenter\/list\? script-path = https://gitlab.com/lodepuly/ProxyResource/-/raw/main/Resource/Script/YY_Voice/YY_Voice_remove_ads.js, requires-body = true, tag = 精简我的页面
 
 [MitM]
 hostname = yyapp-act-entrance.yy.com, yyapp-fastnet.yy.com, personal-center.yy.com, tab.yy.com

@@ -1,12 +1,12 @@
 #!name = 乐播投屏去广告
 #!desc = 移除开屏广告、首页横幅推广、全网全网热投榜，移除我的页面横幅推广。
 #!openUrl = https://apps.apple.com/app/id1116038378
-#!author = 可莉🅥[https://gitlab.com/lodepuly/ProxyResource-/blob/master/README.md]
+#!author = 可莉🅥[https://gitlab.com/lodepuly/ProxyResource-/blob/main/README.md]
 #!tag = 去广告
 #!system = 
 #!system_version = 
 #!loon_version = 3.2.1(749)
-#!homepage = https://gitlab.com/lodepuly/ProxyResource-/blob/master/README.md
+#!homepage = https://gitlab.com/lodepuly/ProxyResource-/blob/main/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/TV_Assistant.png
 #!date = 2024-07-11 02:43:39
 
@@ -80,7 +80,7 @@ DOMAIN, utoken.umeng.com, REJECT
 
 [Script]
 # 移除底栏视频标签
-http-response ^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app_tab_red_dot\?user-tag=1$ script-path = https://gitlab.com/lodepuly/ProxyResource/-/raw/main//Resource/Script/TV_Assistant/TV_Assistant_remove_ads.js, requires-body = true, tag = 移除底栏视频标签
+http-response ^https:\/\/saas\.hpplay\.cn\/api\/lebo-desk\/endpoint\/app-resource\/app_tab_red_dot\?user-tag=1$ script-path = https://gitlab.com/lodepuly/ProxyResource/-/raw/main/Resource/Script/TV_Assistant/TV_Assistant_remove_ads.js, requires-body = true, tag = 移除底栏视频标签
 
 [MitM]
 hostname = saas.hpplay.cn

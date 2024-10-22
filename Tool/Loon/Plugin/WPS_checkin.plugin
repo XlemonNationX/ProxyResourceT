@@ -6,7 +6,7 @@
 #!system = 
 #!system_version = 
 #!loon_version = 3.2.1(749)
-#!homepage = https://gitlab.com/lodepuly/ProxyResource-/blob/master/Resource/Markdown/WPS/README.md
+#!homepage = https://gitlab.com/lodepuly/ProxyResource-/blob/main/Resource/Markdown/WPS/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/WPS.png
 #!date = 2024-10-13 17:59:50
 
@@ -21,10 +21,10 @@ CRONEXP = input, "0 8 * * *", tag = 定时参数, desc = 这里需要输入符�
 
 [Script]
 # 捕获Cookie
-http-request ^https:\/\/moapi\.wps\.cn\/app\/ios\/v1\/app$ script-path = https://gitlab.com/lodepuly/ProxyResource/-/raw/main//Resource/Script/WPS/WPS_checkin.js, requires-body = true, tag = 捕获Cookie, enable = {CaptureCookie}
+http-request ^https:\/\/moapi\.wps\.cn\/app\/ios\/v1\/app$ script-path = https://gitlab.com/lodepuly/ProxyResource/-/raw/main/Resource/Script/WPS/WPS_checkin.js, requires-body = true, tag = 捕获Cookie, enable = {CaptureCookie}
 
 # 定时签到
-cron {CRONEXP} script-path = https://gitlab.com/lodepuly/ProxyResource/-/raw/main//Resource/Script/WPS/WPS_checkin.js, tag = WPS每日签到, timeout = 120, argument=[{AK},{SK},{MAX_RETRIES}]
+cron {CRONEXP} script-path = https://gitlab.com/lodepuly/ProxyResource/-/raw/main/Resource/Script/WPS/WPS_checkin.js, tag = WPS每日签到, timeout = 120, argument=[{AK},{SK},{MAX_RETRIES}]
 
 [MitM]
 hostname = moapi.wps.cn
