@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(749)
 #!homepage = https://gitlab.com/lodepuly/ProxyResource/-/blob/main/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Amap.png
-#!date = 2024-10-23 00:10:13
+#!date = 2024-10-23 00:38:46
 
 [Rule]
 # 移除广告下发请求

@@ -1,7 +1,7 @@
 /*
 引用地址 https://raw.githubusercontent.com/RuCu6/Loon/refs/heads/main/Scripts/amap.js
 */
-// 2024-10-23 00:10:13
+// 2024-10-23 00:38:46
 
 const url = $request.url
 if (!$response.body) $done({})
@@ -429,7 +429,6 @@ if (url.includes('/aos/perception/publicTravel/beforeNavi')) {
     obj.data.headerHotWord = []
   }
 } else if (url.includes('/shield/search_poi/search/sp') || url.includes('/shield/search_poi/mps')) {
-  console.log(JSON.stringify(obj, null, 2))
   if (obj?.data?.list_data) {
     let list = obj.data.list_data.content[0]
     // 详情页 底部 房产推广
