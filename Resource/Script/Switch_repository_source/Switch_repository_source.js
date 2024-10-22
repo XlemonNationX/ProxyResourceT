@@ -3,7 +3,7 @@ Loon专用
 2024-10-01 23:40:54
 */
 let githubPrefix = "https://raw.githubusercontent.com/luestr/ProxyResource/main"
-let gitlabPrefix = "https://gitlab.com/lodepuly/ProxyResource-/raw/master"
+let gitlabPrefix = "https://gitlab.com/lodepuly/ProxyResource/-/raw/main/"
 let giteaPrefix = "https://gitea.com/latick/ProxyResource/raw/branch/main/"
 
 //1: gitbucket 2.gitlab 3.github

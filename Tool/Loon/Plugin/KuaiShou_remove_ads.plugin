@@ -14,7 +14,7 @@
 
 [Script]
 # 视频流广告
-http-response ^https:\/\/az4-api(-idc)?\.ksapisrv\.com\/rest\/n\/feed\/selectionFast\? script-path = https://gitlab.com/lodepuly/ProxyResource-/raw/master/Resource/Script/KuaiShou/KuaiShou_remove_ads.js, requires-body = true, tag = 移除视频流广告
+http-response ^https:\/\/az4-api(-idc)?\.ksapisrv\.com\/rest\/n\/feed\/selectionFast\? script-path = https://gitlab.com/lodepuly/ProxyResource/-/raw/main//Resource/Script/KuaiShou/KuaiShou_remove_ads.js, requires-body = true, tag = 移除视频流广告
 
 [MitM]
 hostname = az4-api.ksapisrv.com, az4-api-idc.ksapisrv.com

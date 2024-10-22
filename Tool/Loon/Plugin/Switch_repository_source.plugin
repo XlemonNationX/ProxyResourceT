@@ -16,9 +16,9 @@ DOMAIN-SUFFIX, gitlab.com, DIRECT
 DOMAIN-SUFFIX, gitea.com, DIRECT
 
 [Script]
-http-request ^https:\/\/raw\.githubusercontent\.com\/luestr\/ProxyResource\/main\/ script-path = https://gitlab.com/lodepuly/ProxyResource-/raw/master/Resource/Script/Switch_repository_source/Switch_repository_source.js, tag = GitHub换源
-http-request ^https:\/\/gitlab\.com\/lodepuly\/vpn_tool\/-\/raw\/master\/ script-path = https://gitlab.com/lodepuly/ProxyResource-/raw/master/Resource/Script/Switch_repository_source/Switch_repository_source.js, tag = GitLab换源
-http-request ^https:\/\/gitea\.com\/latick\/ProxyResource\/raw\/branch\/main\/ script-path = https://gitlab.com/lodepuly/ProxyResource-/raw/master/Resource/Script/Switch_repository_source/Switch_repository_source.js, tag = Gitea换源
+http-request ^https:\/\/raw\.githubusercontent\.com\/luestr\/ProxyResource\/main\/ script-path = https://gitlab.com/lodepuly/ProxyResource/-/raw/main//Resource/Script/Switch_repository_source/Switch_repository_source.js, tag = GitHub换源
+http-request ^https:\/\/gitlab\.com\/lodepuly\/vpn_tool\/-\/raw\/master\/ script-path = https://gitlab.com/lodepuly/ProxyResource/-/raw/main//Resource/Script/Switch_repository_source/Switch_repository_source.js, tag = GitLab换源
+http-request ^https:\/\/gitea\.com\/latick\/ProxyResource\/raw\/branch\/main\/ script-path = https://gitlab.com/lodepuly/ProxyResource/-/raw/main//Resource/Script/Switch_repository_source/Switch_repository_source.js, tag = Gitea换源
 
 [MitM]
 hostname = gitlab.com, raw.githubusercontent.com, gitea.com
