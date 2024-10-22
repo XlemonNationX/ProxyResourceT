@@ -1,6 +1,6 @@
 payload:
   # Author: 可莉🅥
-  # GitLab: https://gitlab.com/lodepuly/vpn_tool/-/tree/main/tool/Loon
+  # GitLab: https://gitlab.com/lodepuly/ProxyResource-/tree/main/tool/Loon
   # 引用地址 https://support.apple.com/en-us/HT210060
   # 设备设置 - 在设置期间或者在安装、更新或恢复操作系统时，Apple 设备需要访问以下主机。
   - DOMAIN,albert.apple.com //设备激活

@@ -6,7 +6,7 @@
 #!system = 
 #!system_version = 
 #!loon_version = 3.2.1(749)
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
+#!homepage = https://gitlab.com/lodepuly/ProxyResource-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/TestFlight.png
 #!input = APP_ID
 #!date = 2024-10-22 00:22:37
@@ -20,11 +20,11 @@ TimingParameters = input, "*/1 * * * * *", tag = 定时参数, desc = 这里需�
 DOMAIN, testflight.apple.com, PROXY
 
 [Script]
-http-request ^https?:\/\/testflight\.apple\.com\/v3\/accounts\/.*\/apps$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/TestFlight/TF_keys.js, tag = 获取账号令牌, enable={CaptureAccountToken}
+http-request ^https?:\/\/testflight\.apple\.com\/v3\/accounts\/.*\/apps$ script-path = https://gitlab.com/lodepuly/ProxyResource-/raw/master/Resource/Script/TestFlight/TF_keys.js, tag = 获取账号令牌, enable={CaptureAccountToken}
 
-http-request ^https://testflight.apple.com/join/(.*) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/TestFlight/TF_keys.js, tag = 应用ID捕获, enable={CaptureAppID}
+http-request ^https://testflight.apple.com/join/(.*) script-path = https://gitlab.com/lodepuly/ProxyResource-/raw/master/Resource/Script/TestFlight/TF_keys.js, tag = 应用ID捕获, enable={CaptureAppID}
 
-cron {TimingParameters} script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/TestFlight/Auto_join_TF.js, tag = 自动加入TF, timeout = 180
+cron {TimingParameters} script-path = https://gitlab.com/lodepuly/ProxyResource-/raw/master/Resource/Script/TestFlight/Auto_join_TF.js, tag = 自动加入TF, timeout = 180
 
 [MitM]
 hostname = testflight.apple.com

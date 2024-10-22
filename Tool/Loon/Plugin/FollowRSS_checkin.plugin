@@ -1,12 +1,12 @@
 #!name = Follow每日签到
 #!desc = Follow每日签到，需要进入此插件的主页链接，阅读使用说明操作。
 #!openUrl = https://follow.is
-#!author = gideonsenku[https://github.com/gideonsenku], 可莉🅥[https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md]
+#!author = gideonsenku[https://github.com/gideonsenku], 可莉🅥[https://gitlab.com/lodepuly/ProxyResource-/blob/master/README.md]
 #!tag = 签到
 #!system = 
 #!system_version = 
 #!loon_version = 3.2.1(749)
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/Resource/Markdown/FollowRSS/README.md
+#!homepage = https://gitlab.com/lodepuly/ProxyResource-/blob/master/Resource/Markdown/FollowRSS/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/FollowRSS.png
 #!date = 2024-10-17 22:58:30
 
@@ -17,4 +17,4 @@ cron = input, "0 1 * * *", tag = 定时参数, desc = 这里需要输入符合CR
 
 [Script]
 # 定时签到
-cron {cron} script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/FollowRSS/FollowRSS_checkin.js, tag = Follow每日签到, timeout = 120, argument=[{token},{cookie}]
+cron {cron} script-path = https://gitlab.com/lodepuly/ProxyResource-/raw/master/Resource/Script/FollowRSS/FollowRSS_checkin.js, tag = Follow每日签到, timeout = 120, argument=[{token},{cookie}]

@@ -6,7 +6,7 @@
 #!system = 
 #!system_version = 
 #!loon_version = 3.2.1(749)
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
+#!homepage = https://gitlab.com/lodepuly/ProxyResource-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Weibo_intl.png
 #!date = 2023-09-07 23:18:14
 
@@ -17,11 +17,11 @@
 
 [Script]
 # 趋势页、开屏广告、用户中心、热搜置顶、我的页面、尊享专属、信息流
-http-response ^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?(ct=(feed&a=trends|user&a=get_searching_info)|a=(get_coopen_ads|user_center|search_topic|open_app&auth|icon_center)) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Weibo_intl/Weibo_intl_remove_ads.js, requires-body = true, tag = 微博轻享版去广告
+http-response ^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?(ct=(feed&a=trends|user&a=get_searching_info)|a=(get_coopen_ads|user_center|search_topic|open_app&auth|icon_center)) script-path = https://gitlab.com/lodepuly/ProxyResource-/raw/master/Resource/Script/Weibo_intl/Weibo_intl_remove_ads.js, requires-body = true, tag = 微博轻享版去广告
 
-http-response ^https?:\/\/api\.weibo\.cn\/\d\/statuses\/.*timeline script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Weibo_intl/Weibo_intl_remove_ads.js, requires-body = true, tag = 微博轻享版去广告
+http-response ^https?:\/\/api\.weibo\.cn\/\d\/statuses\/.*timeline script-path = https://gitlab.com/lodepuly/ProxyResource-/raw/master/Resource/Script/Weibo_intl/Weibo_intl_remove_ads.js, requires-body = true, tag = 微博轻享版去广告
 
-http-response ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Weibo_intl/Weibo_intl_remove_ads.js, requires-body = true, tag = 微博轻享版去广告
+http-response ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php script-path = https://gitlab.com/lodepuly/ProxyResource-/raw/master/Resource/Script/Weibo_intl/Weibo_intl_remove_ads.js, requires-body = true, tag = 微博轻享版去广告
 
 [MitM]
 hostname = *api.weibo.cn, sdkapp.uve.weibo.com

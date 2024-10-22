@@ -6,7 +6,7 @@
 #!system = 
 #!system_version = 
 #!loon_version = 3.2.1(749)
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
+#!homepage = https://gitlab.com/lodepuly/ProxyResource-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/JD.png
 #!date = 2024-04-21 15:41:21
 
@@ -20,7 +20,7 @@ IP-CIDR6, 2402:db40:5100:1011::5/128, REJECT, no-resolve
 ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(searchBoxWord|stationPullService|uniformRecommend[06]) reject-dict
 
 [Script]
-http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/JD/JD_remove_ads.js, requires-body = true, tag = 移除京东广告
+http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome) script-path = https://gitlab.com/lodepuly/ProxyResource-/raw/master/Resource/Script/JD/JD_remove_ads.js, requires-body = true, tag = 移除京东广告
 
 [MitM]
 hostname = api.m.jd.com

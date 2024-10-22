@@ -6,14 +6,14 @@
 #!system = 
 #!system_version = 
 #!loon_version = 3.2.1(749)
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
+#!homepage = https://gitlab.com/lodepuly/ProxyResource-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/mobileClouds.png
 #!date = 2024-02-19 09:43:41
 
 [Script]
-http-response ^https:\/\/jzts\.cmpassport\.com\/personalized\/getPushContent script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/mobileClouds/mobileClouds_remove_ads.js, requires-body = true, tag = 移除开屏广告
+http-response ^https:\/\/jzts\.cmpassport\.com\/personalized\/getPushContent script-path = https://gitlab.com/lodepuly/ProxyResource-/raw/master/Resource/Script/mobileClouds/mobileClouds_remove_ads.js, requires-body = true, tag = 移除开屏广告
 
-http-response ^https:\/\/ad\.mcloud\.139\.com\/advertapi\/adv-filter\/ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/mobileClouds/mobileClouds_remove_ads.js, requires-body = true, tag = 移除应用内广告
+http-response ^https:\/\/ad\.mcloud\.139\.com\/advertapi\/adv-filter\/ script-path = https://gitlab.com/lodepuly/ProxyResource-/raw/master/Resource/Script/mobileClouds/mobileClouds_remove_ads.js, requires-body = true, tag = 移除应用内广告
 
 [MitM]
 hostname = jzts.cmpassport.com, ad.mcloud.139.com

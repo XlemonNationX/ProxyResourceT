@@ -1,12 +1,12 @@
 #!name = Uki去广告
 #!desc = 移除开屏广告、应用内悬浮窗，各类横幅、信息流广告、搜索填充词、我的页面广告。
 #!openUrl = https://apps.apple.com/app/id1298912284
-#!author = 可莉🅥[https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md]
+#!author = 可莉🅥[https://gitlab.com/lodepuly/ProxyResource-/blob/master/README.md]
 #!tag = 去广告
 #!system = 
 #!system_version = 
 #!loon_version = 3.2.1(749)
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
+#!homepage = https://gitlab.com/lodepuly/ProxyResource-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Uki.png
 #!date = 2024-07-26 19:09:38
 
@@ -138,16 +138,16 @@ DOMAIN-SUFFIX, adukwai.com, REJECT
 
 [Script]
 # 匹配卡横幅
-http-response ^https:\/\/api\.chenlongtech\.cn\/v\d\/lover\/productList script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Uki/Uki_remove_ads.js, requires-body = true, tag = 移除匹配卡横幅
+http-response ^https:\/\/api\.chenlongtech\.cn\/v\d\/lover\/productList script-path = https://gitlab.com/lodepuly/ProxyResource-/raw/master/Resource/Script/Uki/Uki_remove_ads.js, requires-body = true, tag = 移除匹配卡横幅
 
 # 密友横幅
-http-response ^https:\/\/api\.chenlongtech\.cn\/v\d\/friends\/closeFriend\/home script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Uki/Uki_remove_ads.js, requires-body = true, tag = 移除密友横幅
+http-response ^https:\/\/api\.chenlongtech\.cn\/v\d\/friends\/closeFriend\/home script-path = https://gitlab.com/lodepuly/ProxyResource-/raw/master/Resource/Script/Uki/Uki_remove_ads.js, requires-body = true, tag = 移除密友横幅
 
 # 娱乐页面横幅和悬浮窗配置
-http-response ^https:\/\/api\.chenlongtech\.cn\/v\d\/party\/config$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Uki/Uki_remove_ads.js, requires-body = true, tag = 移除娱乐页面横幅和悬浮窗配置
+http-response ^https:\/\/api\.chenlongtech\.cn\/v\d\/party\/config$ script-path = https://gitlab.com/lodepuly/ProxyResource-/raw/master/Resource/Script/Uki/Uki_remove_ads.js, requires-body = true, tag = 移除娱乐页面横幅和悬浮窗配置
 
 # 广场搜索填充词
-http-response ^https:\/\/api\.chenlongtech\.cn\/v1\/post\/fetchSearchRecommend$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Uki/Uki_remove_ads.js, requires-body = true, tag = 移除广场搜索填充词
+http-response ^https:\/\/api\.chenlongtech\.cn\/v1\/post\/fetchSearchRecommend$ script-path = https://gitlab.com/lodepuly/ProxyResource-/raw/master/Resource/Script/Uki/Uki_remove_ads.js, requires-body = true, tag = 移除广场搜索填充词
 
 [MitM]
 hostname = api.chenlongtech.cn, 203.107.1.1, 203.107.1.33, 203.107.1.66, 203.107.1.67, 203.107.1.97, 2401:b180:2000:30::1c, 2401:b180:2000:20::10

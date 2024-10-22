@@ -1,12 +1,12 @@
 #!name = 漫客栈去广告
 #!desc = 移除开屏广告、漫画广告、小说章末广告，精简我的页面。
 #!openUrl = https://apps.apple.com/app/id1189885433
-#!author = 可莉🅥[https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md]
+#!author = 可莉🅥[https://gitlab.com/lodepuly/ProxyResource-/blob/master/README.md]
 #!tag = 去广告
 #!system = 
 #!system_version = 
 #!loon_version = 3.2.1(749)
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
+#!homepage = https://gitlab.com/lodepuly/ProxyResource-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/MKZ.png
 #!date = 2024-07-18 21:07:01
 
@@ -123,7 +123,7 @@ DOMAIN, plbslog.umeng.com, REJECT
 
 [Script]
 # 配置修改
-http-response ^https:\/\/base\.mkzcdn\.com\/app\/config\/ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/MKZ/MKZ_remove_ads.js, requires-body = true, tag = 配置修改
+http-response ^https:\/\/base\.mkzcdn\.com\/app\/config\/ script-path = https://gitlab.com/lodepuly/ProxyResource-/raw/master/Resource/Script/MKZ/MKZ_remove_ads.js, requires-body = true, tag = 配置修改
 
 [MitM]
 hostname = base.mkzcdn.com

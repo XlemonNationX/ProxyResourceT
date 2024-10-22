@@ -1,12 +1,12 @@
 #!name = 皮皮虾去广告
 #!desc = 移除开屏广告、评论区广告、视频流广告，精简我的页面。已知问题，评论区无内容。
 #!openUrl = https://apps.apple.com/app/id1393912676
-#!author = 可莉🅥[https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md]
+#!author = 可莉🅥[https://gitlab.com/lodepuly/ProxyResource-/blob/master/README.md]
 #!tag = 去广告
 #!system = 
 #!system_version = 
 #!loon_version = 3.2.1(749)
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
+#!homepage = https://gitlab.com/lodepuly/ProxyResource-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/PiPiXia.png
 #!date = 2024-09-09 10:35:01
 
@@ -75,10 +75,10 @@ DOMAIN-KEYWORD, asiad.byteactivity, REJECT
 
 [Script]
 # 视频流广告
-http-response ^https:\/\/api(5-lq)?\.pipix\.com\/bds\/feed\/stream\/v2\/ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/PiPiXia/PiPiXia_remove_ads.js, requires-body = true, tag = 移除视频流广告
+http-response ^https:\/\/api(5-lq)?\.pipix\.com\/bds\/feed\/stream\/v2\/ script-path = https://gitlab.com/lodepuly/ProxyResource-/raw/master/Resource/Script/PiPiXia/PiPiXia_remove_ads.js, requires-body = true, tag = 移除视频流广告
 
 # 我的页面
-http-response ^https:\/\/api(5-lq)?\.pipix\.com\/bds\/user\/check_in\/ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/PiPiXia/PiPiXia_remove_ads.js, requires-body = true, tag = 精简我的页面
+http-response ^https:\/\/api(5-lq)?\.pipix\.com\/bds\/user\/check_in\/ script-path = https://gitlab.com/lodepuly/ProxyResource-/raw/master/Resource/Script/PiPiXia/PiPiXia_remove_ads.js, requires-body = true, tag = 精简我的页面
 
 [MitM]
 hostname = api.pipix.com, api5-lq.pipix.com
