@@ -77,7 +77,7 @@
 
 [GitHub 仓库](https://github.com/luestr/ProxyResource/blob/main/README.md) - 需要代理访问
 
-[GitLab 仓库](https://gitlab.com/lodepuly/ProxyResource-/blob/main/README.md/) - 电信联通可直连访问
+[GitLab 仓库](https://gitlab.com/lodepuly/ProxyResource/-/blob/main/README.md/) - 电信联通可直连访问
 
 ------
 

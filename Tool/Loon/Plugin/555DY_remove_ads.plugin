@@ -1,12 +1,12 @@
 #!name = 555电影去广告
 #!desc = 移除开屏广告和各类横幅广告，支持iPadOS。
 #!openUrl = https://5wuv.com/
-#!author = 可莉🅥[https://gitlab.com/lodepuly/ProxyResource-/blob/main/README.md]
+#!author = 可莉🅥[https://gitlab.com/lodepuly/ProxyResource/-/blob/main/README.md]
 #!tag = 去广告
 #!system = iOS, iPadOS
 #!system_version = 
 #!loon_version = 3.2.1(749)
-#!homepage = https://gitlab.com/lodepuly/ProxyResource-/blob/main/README.md
+#!homepage = https://gitlab.com/lodepuly/ProxyResource/-/blob/main/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/555DY.png
 #!date = 2024-08-28 15:16:38
 

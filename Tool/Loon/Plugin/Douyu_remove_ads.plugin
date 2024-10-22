@@ -1,12 +1,12 @@
 #!name = 斗鱼去广告
 #!desc = 移除开屏、首页视频流、首页轮播图广告，移除直播间悬浮窗。
 #!openUrl = https://apps.apple.com/app/id863882795
-#!author = 可莉🅥[https://gitlab.com/lodepuly/ProxyResource-/blob/main/README.md]
+#!author = 可莉🅥[https://gitlab.com/lodepuly/ProxyResource/-/blob/main/README.md]
 #!tag = 去广告
 #!system = 
 #!system_version = 
 #!loon_version = 3.2.1(749)
-#!homepage = https://gitlab.com/lodepuly/ProxyResource-/blob/main/README.md
+#!homepage = https://gitlab.com/lodepuly/ProxyResource/-/blob/main/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Douyu.png
 #!date = 2024-09-28 01:25:08
 

@@ -1,5 +1,5 @@
 # Author: 可莉🅥
-# GitLab: https://gitlab.com/lodepuly/ProxyResource-/tree/main/tool/Loon
+# GitLab: https://gitlab.com/lodepuly/ProxyResource/-/tree/main/tool/Loon
 # 引用地址 https://support.apple.com/en-us/HT210060
 # 设备管理 - 已在 MDM 中注册的 Apple 设备需要访问以下主机和域。
 DOMAIN-SUFFIX, push.apple.com //推送通知
