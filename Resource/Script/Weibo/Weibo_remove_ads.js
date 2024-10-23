@@ -189,25 +189,6 @@ if (url.includes("/interface/sdk/sdkad.php")) {
   } else if (url.includes("/2/container/asyn")) {
     if (obj?.items?.length > 0) {
       let newItems = [];
-      for (let item of obj.items) {
-        removeAvatar(item?.data); // 关注按钮
-        if (/infeed_may_interest_in/.test(item?.itemId)) {
-          // 你可能感兴趣的超话
-          continue;
-        }
-        if (item?.itemId === null) {
-          // 横版博主卡片
-          continue;
-        }
-        if (item?.items?.length > 0) {
-          for (let i of item.items) {
-            removeAvatar(i?.data); // 背景卡片
-            removeVoteInfo(i?.data); // 投票窗口
-          }
-        }
-        newItems.push(item);
-      }
-      obj.items = newItems;
     }
   } else if (url.includes("/2/direct_messages/user_list")) {
     if (obj?.user_list?.length > 0) {
@@ -224,21 +205,6 @@ if (url.includes("/interface/sdk/sdkad.php")) {
           }
         }
       }
-    }
-    if (obj?.channelInfo?.channels?.length > 0) {
-      let newTabs = [];
-      for (let tab of obj.channelInfo.channels) {
-        if (/_selfrecomm/.test(tab?.flowId)) {
-          // 关注页推荐tab
-          continue;
-        } else if (/_chaohua/.test(tab?.flowId)) {
-          // 关注页超话tab
-          continue;
-        } else {
-          newTabs.push(tab);
-        }
-      }
-      obj.channelInfo.channels = newTabs;
     }
   } else if (url.includes("/2/flowpage")) {
     // 热搜列表
