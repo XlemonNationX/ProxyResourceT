@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(749)
 #!homepage = https://gitlab.com/lodepuly/ProxyResource/-/blob/main/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/DiDi.png
-#!date = 2024-09-08 22:05:03
+#!date = 2024-10-23 09:26:43
 
 [Rule]
 # 拦截HTTPDNS
@@ -28,6 +28,7 @@ AND, ((IP-ASN, 63646, no-resolve), (DEST-PORT, 25641), (PROTOCOL, TCP)), REJECT
 ^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget reject-dict
 ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/other\/fast reject-dict
 ^https:\/\/conf\.diditaxi\.com\.cn\/dynamic\/conf reject-dict
+^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v1\/other\/slow reject-dict
 
 [Script]
 http-response ^https:\/\/common\.diditaxi\.com\.cn\/common\/v\d\/usercenter\/me script-path = https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js, requires-body = true, tag = 移除广告
@@ -37,4 +38,4 @@ http-response ^https:\/\/conf\.diditaxi\.com\.cn\/ota\/na\/yuantu\/infoList scri
 http-response ^https:\/\/api\.udache\.com\/gulfstream\/passenger-center\/v2\/other\/pInTripLayout script-path = https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js, requires-body = true, tag = 移除广告
 
 [MitM]
-hostname = common.diditaxi.com.cn, freight.xiaojukeji.com, daijia.kuaidadi.com, ct.xiaojukeji.com, res.xiaojukeji.com, conf.diditaxi.com.cn ,api.udache.com ,123.207.209.*, 112.53.55.225,120.241.142.*,120.241.143.*,116.85.2.*, 116.85.3.*, 139.199.240.84
+hostname = common.diditaxi.com.cn, freight.xiaojukeji.com, daijia.kuaidadi.com, 162.14.157.*, ct.xiaojukeji.com, res.xiaojukeji.com, conf.diditaxi.com.cn ,api.udache.com ,123.207.209.*, 112.53.55.225,120.241.142.*,120.241.143.*,116.85.2.*, 116.85.3.*, 139.199.240.84
